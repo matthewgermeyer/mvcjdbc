@@ -1,0 +1,415 @@
+2017-05-08 13:36:57.690  INFO 5658 --- [restartedMain] com.example.Application                  : Starting Application on Matthews-MacBook-Air.local with PID 5658 (/Users/MattyG/IdeaProjects/mvcjdbc/target/classes started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 13:36:57.698 DEBUG 5658 --- [restartedMain] com.example.Application                  : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-05-08 13:36:57.698  INFO 5658 --- [restartedMain] com.example.Application                  : No active profile set, falling back to default profiles: default
+2017-05-08 13:36:58.522  INFO 5658 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f2778dc: startup date [Mon May 08 13:36:58 CDT 2017]; root of context hierarchy
+2017-05-08 13:36:59.098 DEBUG 5658 --- [background-preinit] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-05-08 13:39:37.337  INFO 5749 --- [restartedMain] com.example.Application                  : Starting Application on Matthews-MacBook-Air.local with PID 5749 (/Users/MattyG/IdeaProjects/mvcjdbc/target/classes started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 13:39:37.339 DEBUG 5749 --- [restartedMain] com.example.Application                  : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-05-08 13:39:37.339  INFO 5749 --- [restartedMain] com.example.Application                  : No active profile set, falling back to default profiles: default
+2017-05-08 13:39:37.984  INFO 5749 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f2778dc: startup date [Mon May 08 13:39:37 CDT 2017]; root of context hierarchy
+2017-05-08 13:39:38.089 DEBUG 5749 --- [background-preinit] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-05-08 13:39:40.458  INFO 5749 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-08 13:39:40.932  INFO 5749 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-08 13:39:40.937  INFO 5749 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-08 13:39:40.938  INFO 5749 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-08 13:39:40.938  INFO 5749 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-08 13:39:40.938  INFO 5749 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-08 13:39:42.370  INFO 5749 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-08 13:39:42.456  INFO 5749 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-08 13:39:42.548  INFO 5749 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-08 13:39:42.557  INFO 5749 --- [restartedMain] com.example.Application                  : Started Application in 6.709 seconds (JVM running for 7.586)
+2017-05-08 13:44:42.103  INFO 5749 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f2778dc: startup date [Mon May 08 13:39:37 CDT 2017]; root of context hierarchy
+2017-05-08 13:44:42.106  INFO 5749 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-08 13:44:48.020  INFO 5914 --- [restartedMain] com.example.Application                  : Starting Application on Matthews-MacBook-Air.local with PID 5914 (/Users/MattyG/IdeaProjects/mvcjdbc/target/classes started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 13:44:48.021 DEBUG 5914 --- [restartedMain] com.example.Application                  : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-05-08 13:44:48.022  INFO 5914 --- [restartedMain] com.example.Application                  : No active profile set, falling back to default profiles: default
+2017-05-08 13:44:48.675  INFO 5914 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f2778dc: startup date [Mon May 08 13:44:48 CDT 2017]; root of context hierarchy
+2017-05-08 13:44:48.709 DEBUG 5914 --- [background-preinit] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-05-08 13:44:51.235  INFO 5914 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-08 13:44:51.688  INFO 5914 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-08 13:44:51.694  INFO 5914 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-08 13:44:51.695  INFO 5914 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-08 13:44:51.695  INFO 5914 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-08 13:44:51.695  INFO 5914 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-08 13:44:53.418  INFO 5914 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-08 13:44:53.540  INFO 5914 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-08 13:44:53.647  INFO 5914 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-08 13:44:53.660  INFO 5914 --- [restartedMain] com.example.Application                  : Started Application in 7.266 seconds (JVM running for 8.234)
+2017-05-08 13:47:10.852  INFO 5914 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f2778dc: startup date [Mon May 08 13:44:48 CDT 2017]; root of context hierarchy
+2017-05-08 13:47:10.856  INFO 5914 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-08 13:47:16.500  INFO 5938 --- [restartedMain] com.example.Application                  : Starting Application on Matthews-MacBook-Air.local with PID 5938 (/Users/MattyG/IdeaProjects/mvcjdbc/target/classes started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 13:47:16.502 DEBUG 5938 --- [restartedMain] com.example.Application                  : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2017-05-08 13:47:16.503  INFO 5938 --- [restartedMain] com.example.Application                  : No active profile set, falling back to default profiles: default
+2017-05-08 13:47:17.397 DEBUG 5938 --- [background-preinit] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-05-08 13:47:17.468  INFO 5938 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3646144d: startup date [Mon May 08 13:47:17 CDT 2017]; root of context hierarchy
+2017-05-08 13:47:19.808  INFO 5938 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-08 13:47:20.238  INFO 5938 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-08 13:47:20.245  INFO 5938 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-08 13:47:20.246  INFO 5938 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-08 13:47:20.246  INFO 5938 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-08 13:47:20.246  INFO 5938 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-08 13:47:21.727  INFO 5938 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-08 13:47:21.826  INFO 5938 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-08 13:47:21.938  INFO 5938 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-08 13:47:21.952  INFO 5938 --- [restartedMain] com.example.Application                  : Started Application in 6.729 seconds (JVM running for 7.771)
+2017-05-08 13:59:25.619  INFO 5938 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3646144d: startup date [Mon May 08 13:47:17 CDT 2017]; root of context hierarchy
+2017-05-08 13:59:25.654  INFO 5938 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-08 13:59:33.959  INFO 6043 --- [restartedMain] com.example.Application                  : Starting Application on Matthews-MacBook-Air.local with PID 6043 (/Users/MattyG/IdeaProjects/mvcjdbc/target/classes started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 13:59:33.961  INFO 6043 --- [restartedMain] com.example.Application                  : No active profile set, falling back to default profiles: default
+2017-05-08 13:59:34.670  INFO 6043 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22164057: startup date [Mon May 08 13:59:34 CDT 2017]; root of context hierarchy
+2017-05-08 13:59:36.678  INFO 6043 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f34c981] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 13:59:37.290  INFO 6043 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-08 13:59:37.308  INFO 6043 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-08 13:59:37.310  INFO 6043 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-05-08 13:59:37.468  INFO 6043 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-08 13:59:37.468  INFO 6043 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2803 ms
+2017-05-08 13:59:37.701  INFO 6043 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-08 13:59:37.709  INFO 6043 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-08 13:59:37.710  INFO 6043 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-08 13:59:37.710  INFO 6043 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-08 13:59:37.711  INFO 6043 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-08 13:59:38.964  INFO 6043 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22164057: startup date [Mon May 08 13:59:34 CDT 2017]; root of context hierarchy
+2017-05-08 13:59:39.127  INFO 6043 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 13:59:39.130  INFO 6043 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 13:59:39.140  INFO 6043 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 13:59:39.142  INFO 6043 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 13:59:39.244  INFO 6043 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 13:59:39.244  INFO 6043 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 13:59:39.376  INFO 6043 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 13:59:40.298  INFO 6043 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-08 13:59:40.437  INFO 6043 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-08 13:59:40.734  INFO 6043 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-08 13:59:40.744  INFO 6043 --- [restartedMain] com.example.Application                  : Started Application in 8.028 seconds (JVM running for 8.976)
+2017-05-08 13:59:46.700  INFO 6043 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-08 13:59:46.703  INFO 6043 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-08 13:59:46.720  INFO 6043 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-05-08 14:44:39.454  INFO 6043 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22164057: startup date [Mon May 08 13:59:34 CDT 2017]; root of context hierarchy
+2017-05-08 14:44:39.498  INFO 6043 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-08 14:44:47.376  INFO 6534 --- [restartedMain] com.example.Application                  : Starting Application on Matthews-MacBook-Air.local with PID 6534 (/Users/MattyG/IdeaProjects/mvcjdbc/target/classes started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 14:44:47.380  INFO 6534 --- [restartedMain] com.example.Application                  : No active profile set, falling back to default profiles: default
+2017-05-08 14:44:48.235  INFO 6534 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1712e555: startup date [Mon May 08 14:44:48 CDT 2017]; root of context hierarchy
+2017-05-08 14:44:50.441  INFO 6534 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4535266] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 14:44:51.171  INFO 6534 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-08 14:44:51.192  INFO 6534 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-08 14:44:51.194  INFO 6534 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-05-08 14:44:51.361  INFO 6534 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-08 14:44:51.362  INFO 6534 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3141 ms
+2017-05-08 14:44:51.616  INFO 6534 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-08 14:44:51.624  INFO 6534 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-08 14:44:51.625  INFO 6534 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-08 14:44:51.625  INFO 6534 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-08 14:44:51.625  INFO 6534 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-08 14:44:52.533  INFO 6534 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1712e555: startup date [Mon May 08 14:44:48 CDT 2017]; root of context hierarchy
+2017-05-08 14:44:52.690  INFO 6534 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 14:44:52.692  INFO 6534 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 14:44:52.701  INFO 6534 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 14:44:52.702  INFO 6534 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 14:44:52.788  INFO 6534 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 14:44:52.789  INFO 6534 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 14:44:52.877  INFO 6534 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 14:44:54.204  INFO 6534 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-08 14:44:54.588  INFO 6534 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-08 14:44:54.720  INFO 6534 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-08 14:44:54.735  INFO 6534 --- [restartedMain] com.example.Application                  : Started Application in 8.475 seconds (JVM running for 9.563)
+2017-05-08 14:45:03.728  INFO 6534 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-08 14:45:03.728  INFO 6534 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-08 14:45:03.745  INFO 6534 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-05-08 14:45:25.599  INFO 6534 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1712e555: startup date [Mon May 08 14:44:48 CDT 2017]; root of context hierarchy
+2017-05-08 14:45:25.602  INFO 6534 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-08 14:50:43.069  INFO 6669 --- [restartedMain] com.example.Application                  : Starting Application on Matthews-MacBook-Air.local with PID 6669 (/Users/MattyG/IdeaProjects/mvcjdbc/target/classes started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 14:50:43.073  INFO 6669 --- [restartedMain] com.example.Application                  : No active profile set, falling back to default profiles: default
+2017-05-08 14:50:45.580  INFO 6669 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@276ba8ee: startup date [Mon May 08 14:50:45 CDT 2017]; root of context hierarchy
+2017-05-08 15:11:33.907  INFO 1024 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1024 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 15:11:33.924  INFO 1024 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 15:11:34.697  INFO 1024 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:11:34 CDT 2017]; root of context hierarchy
+2017-05-08 15:11:37.197  INFO 1024 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2077afe8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 15:11:38.796  INFO 1024 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:11:34 CDT 2017]; root of context hierarchy
+2017-05-08 15:11:38.919  INFO 1024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 15:11:38.921  INFO 1024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 15:11:38.925  INFO 1024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 15:11:38.926  INFO 1024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 15:11:38.992  INFO 1024 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:11:38.993  INFO 1024 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:11:39.088  INFO 1024 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:11:40.447  INFO 1024 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 7.871 seconds (JVM running for 10.414)
+2017-05-08 15:11:40.785 ERROR 1024 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 1 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_121]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2103) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_121]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.11.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.11.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:732) [tomcat-jdbc-8.5.11.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:664) [tomcat-jdbc-8.5.11.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:479) [tomcat-jdbc-8.5.11.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.11.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.11.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.11.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.11.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) [spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) [spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:394) [spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:474) [spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:484) [spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:510) [spring-jdbc-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at com.example.dao.NutritionDaoImpl.findAll(NutritionDaoImpl.java:30) [classes/:na]
+	at com.example.dao.NutritionDaoImpl$$FastClassBySpringCGLIB$$25c93867.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:721) [spring-aop-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136) [spring-tx-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:656) [spring-aop-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at com.example.dao.NutritionDaoImpl$$EnhancerBySpringCGLIB$$7f49e295.findAll(<generated>) [classes/:na]
+	at com.example.dao.NutritionDaoTest.testCreate(NutritionDaoTest.java:38) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.7.RELEASE.jar:4.3.7.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237) [junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_121]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026) ~[mysql-connector-java-5.1.6.jar:na]
+	... 67 common frames omitted
+
+2017-05-08 15:11:40.826  INFO 1024 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:11:34 CDT 2017]; root of context hierarchy
+2017-05-08 15:20:34.801  INFO 1425 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1425 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 15:20:34.804  INFO 1425 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 15:20:35.436  INFO 1425 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:20:35 CDT 2017]; root of context hierarchy
+2017-05-08 15:20:37.709  INFO 1425 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2dd332e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 15:20:39.140  INFO 1425 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:20:35 CDT 2017]; root of context hierarchy
+2017-05-08 15:20:39.306  INFO 1425 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 15:20:39.308  INFO 1425 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 15:20:39.317  INFO 1425 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 15:20:39.318  INFO 1425 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 15:20:39.394  INFO 1425 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:20:39.394  INFO 1425 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:20:39.470  INFO 1425 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:20:40.455  INFO 1425 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 6.705 seconds (JVM running for 8.592)
+2017-05-08 15:20:41.294  INFO 1425 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-05-08 15:20:41.696  INFO 1425 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-05-08 15:20:41.742  INFO 1425 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:20:35 CDT 2017]; root of context hierarchy
+2017-05-08 15:21:20.399  INFO 1433 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1433 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 15:21:20.402  INFO 1433 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 15:21:21.215  INFO 1433 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:21:21 CDT 2017]; root of context hierarchy
+2017-05-08 15:21:23.156  INFO 1433 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d1eba52e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 15:21:24.457  INFO 1433 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:21:21 CDT 2017]; root of context hierarchy
+2017-05-08 15:21:24.566  INFO 1433 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 15:21:24.568  INFO 1433 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 15:21:24.573  INFO 1433 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 15:21:24.574  INFO 1433 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 15:21:24.635  INFO 1433 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:21:24.635  INFO 1433 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:21:24.724  INFO 1433 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:21:25.758  INFO 1433 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 6.122 seconds (JVM running for 7.66)
+2017-05-08 15:21:26.450  INFO 1433 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-05-08 15:21:26.710  INFO 1433 --- [main] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-05-08 15:21:26.740  INFO 1433 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:21:21 CDT 2017]; root of context hierarchy
+2017-05-08 15:25:28.687  INFO 1477 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1477 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 15:25:28.689  INFO 1477 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 15:25:29.319  INFO 1477 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:25:29 CDT 2017]; root of context hierarchy
+2017-05-08 15:25:31.135  INFO 1477 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$edcea813] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 15:25:32.577  INFO 1477 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:25:29 CDT 2017]; root of context hierarchy
+2017-05-08 15:25:32.688  INFO 1477 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 15:25:32.691  INFO 1477 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 15:25:32.695  INFO 1477 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 15:25:32.696  INFO 1477 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 15:25:32.752  INFO 1477 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:25:32.752  INFO 1477 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:25:32.834  INFO 1477 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:25:33.766  INFO 1477 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 6.289 seconds (JVM running for 8.083)
+2017-05-08 15:25:34.503  INFO 1477 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:25:29 CDT 2017]; root of context hierarchy
+2017-05-08 15:36:47.978  INFO 1597 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1597 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 15:36:47.981  INFO 1597 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 15:36:48.526  INFO 1597 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:36:48 CDT 2017]; root of context hierarchy
+2017-05-08 15:36:51.124  INFO 1597 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$14870bc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 15:36:52.485  INFO 1597 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:36:48 CDT 2017]; root of context hierarchy
+2017-05-08 15:36:52.608  INFO 1597 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 15:36:52.610  INFO 1597 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 15:36:52.615  INFO 1597 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 15:36:52.616  INFO 1597 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 15:36:52.681  INFO 1597 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:36:52.681  INFO 1597 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:36:52.777  INFO 1597 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:36:54.038  INFO 1597 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 7.129 seconds (JVM running for 9.339)
+2017-05-08 15:36:54.845  INFO 1597 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:36:48 CDT 2017]; root of context hierarchy
+2017-05-08 15:50:25.813  INFO 1680 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1680 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 15:50:25.815  INFO 1680 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 15:50:26.514  INFO 1680 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:50:26 CDT 2017]; root of context hierarchy
+2017-05-08 15:50:28.832  INFO 1680 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4318d29f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 15:50:30.283  INFO 1680 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:50:26 CDT 2017]; root of context hierarchy
+2017-05-08 15:50:30.418  INFO 1680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 15:50:30.420  INFO 1680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 15:50:30.424  INFO 1680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 15:50:30.425  INFO 1680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 15:50:30.478  INFO 1680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:50:30.479  INFO 1680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:50:30.561  INFO 1680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:50:31.670  INFO 1680 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 7.124 seconds (JVM running for 9.058)
+2017-05-08 15:50:32.383  INFO 1680 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:50:26 CDT 2017]; root of context hierarchy
+2017-05-08 15:53:32.547  INFO 1727 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1727 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 15:53:32.557  INFO 1727 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 15:53:33.335  INFO 1727 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:53:33 CDT 2017]; root of context hierarchy
+2017-05-08 15:53:35.471  INFO 1727 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d1664e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 15:53:36.962  INFO 1727 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:53:33 CDT 2017]; root of context hierarchy
+2017-05-08 15:53:37.079  INFO 1727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 15:53:37.081  INFO 1727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 15:53:37.085  INFO 1727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 15:53:37.086  INFO 1727 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 15:53:37.137  INFO 1727 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:53:37.138  INFO 1727 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:53:37.221  INFO 1727 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:53:38.248  INFO 1727 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 6.75 seconds (JVM running for 8.472)
+2017-05-08 15:53:38.923  INFO 1727 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:53:33 CDT 2017]; root of context hierarchy
+2017-05-08 15:55:35.114  INFO 1762 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1762 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 15:55:35.116  INFO 1762 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 15:55:35.695  INFO 1762 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:55:35 CDT 2017]; root of context hierarchy
+2017-05-08 15:55:37.603  INFO 1762 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d0120b90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 15:55:39.032  INFO 1762 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:55:35 CDT 2017]; root of context hierarchy
+2017-05-08 15:55:39.143  INFO 1762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 15:55:39.144  INFO 1762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 15:55:39.149  INFO 1762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 15:55:39.150  INFO 1762 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 15:55:39.198  INFO 1762 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:55:39.198  INFO 1762 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:55:39.289  INFO 1762 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:55:40.347  INFO 1762 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 6.108 seconds (JVM running for 7.83)
+2017-05-08 15:55:40.954  INFO 1762 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 15:55:35 CDT 2017]; root of context hierarchy
+2017-05-08 15:58:29.538  INFO 1799 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1799 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 15:58:29.540  INFO 1799 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 15:58:30.072  INFO 1799 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 15:58:30 CDT 2017]; root of context hierarchy
+2017-05-08 15:58:32.078  INFO 1799 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$964d8a85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 15:58:33.489  INFO 1799 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 15:58:30 CDT 2017]; root of context hierarchy
+2017-05-08 15:58:33.594  INFO 1799 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 15:58:33.596  INFO 1799 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 15:58:33.600  INFO 1799 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 15:58:33.601  INFO 1799 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 15:58:33.652  INFO 1799 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:58:33.652  INFO 1799 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:58:33.735  INFO 1799 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 15:58:34.697  INFO 1799 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 6.12 seconds (JVM running for 8.125)
+2017-05-08 15:58:35.403  INFO 1799 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 15:58:30 CDT 2017]; root of context hierarchy
+2017-05-08 16:02:27.099  INFO 1862 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1862 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 16:02:27.102  INFO 1862 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 16:02:27.769  INFO 1862 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 16:02:27 CDT 2017]; root of context hierarchy
+2017-05-08 16:02:29.844  INFO 1862 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c2567004] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 16:02:31.339  INFO 1862 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 16:02:27 CDT 2017]; root of context hierarchy
+2017-05-08 16:02:31.442  INFO 1862 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 16:02:31.444  INFO 1862 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 16:02:31.447  INFO 1862 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 16:02:31.449  INFO 1862 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 16:02:31.510  INFO 1862 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:02:31.510  INFO 1862 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:02:31.595  INFO 1862 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:02:32.581  INFO 1862 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 6.423 seconds (JVM running for 8.161)
+2017-05-08 16:02:33.341  INFO 1862 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 16:02:27 CDT 2017]; root of context hierarchy
+2017-05-08 16:03:52.293  INFO 1893 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1893 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 16:03:52.298  INFO 1893 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 16:03:52.905  INFO 1893 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 16:03:52 CDT 2017]; root of context hierarchy
+2017-05-08 16:03:54.865  INFO 1893 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c2567004] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 16:03:56.288  INFO 1893 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 16:03:52 CDT 2017]; root of context hierarchy
+2017-05-08 16:03:56.434  INFO 1893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 16:03:56.436  INFO 1893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 16:03:56.440  INFO 1893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 16:03:56.442  INFO 1893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 16:03:56.510  INFO 1893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:03:56.512  INFO 1893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:03:56.595  INFO 1893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:03:57.571  INFO 1893 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 6.188 seconds (JVM running for 7.918)
+2017-05-08 16:03:58.219  INFO 1893 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 16:03:52 CDT 2017]; root of context hierarchy
+2017-05-08 16:05:54.268  INFO 1914 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 1914 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 16:05:54.271  INFO 1914 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 16:05:54.794  INFO 1914 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 16:05:54 CDT 2017]; root of context hierarchy
+2017-05-08 16:05:56.971  INFO 1914 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c3766ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 16:05:58.526  INFO 1914 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 16:05:54 CDT 2017]; root of context hierarchy
+2017-05-08 16:05:58.655  INFO 1914 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 16:05:58.657  INFO 1914 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 16:05:58.660  INFO 1914 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 16:05:58.660  INFO 1914 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 16:05:58.719  INFO 1914 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:05:58.720  INFO 1914 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:05:58.807  INFO 1914 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:05:59.754  INFO 1914 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 6.606 seconds (JVM running for 8.498)
+2017-05-08 16:06:00.526  INFO 1914 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7e9131d5: startup date [Mon May 08 16:05:54 CDT 2017]; root of context hierarchy
+2017-05-08 16:28:40.289  INFO 2078 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 2078 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 16:28:40.291  INFO 2078 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 16:28:40.953  INFO 2078 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 16:28:40 CDT 2017]; root of context hierarchy
+2017-05-08 16:28:43.466  INFO 2078 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4f8e1a08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 16:28:44.956  INFO 2078 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 16:28:40 CDT 2017]; root of context hierarchy
+2017-05-08 16:28:45.078  INFO 2078 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 16:28:45.080  INFO 2078 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 16:28:45.084  INFO 2078 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 16:28:45.085  INFO 2078 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 16:28:45.143  INFO 2078 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:28:45.144  INFO 2078 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:28:45.231  INFO 2078 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:28:46.282  INFO 2078 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 7.329 seconds (JVM running for 9.142)
+2017-05-08 16:28:47.013  INFO 2078 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 16:28:40 CDT 2017]; root of context hierarchy
+2017-05-08 16:48:07.351  INFO 2215 --- [main] com.example.dao.NutritionDaoTest         : Starting NutritionDaoTest on Matthews-MacBook-Air.local with PID 2215 (started by MattyG in /Users/MattyG/IdeaProjects/mvcjdbc)
+2017-05-08 16:48:07.355  INFO 2215 --- [main] com.example.dao.NutritionDaoTest         : No active profile set, falling back to default profiles: default
+2017-05-08 16:48:07.954  INFO 2215 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 16:48:07 CDT 2017]; root of context hierarchy
+2017-05-08 16:48:10.076  INFO 2215 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4f8e1a08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-08 16:48:11.601  INFO 2215 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 16:48:07 CDT 2017]; root of context hierarchy
+2017-05-08 16:48:11.768  INFO 2215 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public java.lang.String com.example.GreetingController.greeting(java.lang.String,org.springframework.ui.Model)
+2017-05-08 16:48:11.772  INFO 2215 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet]}" onto public com.example.Greeting com.example.GreetingController.greeting(java.lang.String)
+2017-05-08 16:48:11.775  INFO 2215 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-08 16:48:11.776  INFO 2215 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-08 16:48:11.847  INFO 2215 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:48:11.848  INFO 2215 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:48:11.934  INFO 2215 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-08 16:48:12.993  INFO 2215 --- [main] com.example.dao.NutritionDaoTest         : Started NutritionDaoTest in 7.058 seconds (JVM running for 8.931)
+2017-05-08 16:48:13.649  INFO 2215 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@e1de817: startup date [Mon May 08 16:48:07 CDT 2017]; root of context hierarchy
