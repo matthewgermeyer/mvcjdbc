@@ -14,7 +14,7 @@
 <div class="container">
     <div th:if="${not #lists.isEmpty(nutritions)}">
 
-        <table class = "table table-striped table-bordered">
+        <table class = "table table-striped table-bordered table-hover">
             <tr>
                 <th class="text-center"> Id </th>
                 <th class="text-center"> Product </th>
@@ -32,11 +32,11 @@
 </div>
 
 <div>
-    <form>
+    <form class="text-center">
         <button formaction="http://localhost:8080/nutrition">Make a new Nut!</button>
+        <a href="/nutrition"><input type="button" value="Submit"/></a>
     </form>
 
-    <a href="/nutrition"><input type="button" value="Submit"/></a>
 </div>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
