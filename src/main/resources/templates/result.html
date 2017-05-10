@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'id: ' + ${nutrition.id}" />
+<p th:text="'product: ' + ${nutrition.product}" />
+<p th:text="'calories: ' + ${nutrition.calories}" />
+<p th:text="'carbs: ' + ${nutrition.carbs}" />
+<a href="/nutrition">Submit another message</a>
+</body>
+</html>

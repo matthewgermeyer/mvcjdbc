@@ -38,14 +38,16 @@ public class Nutrition {
 
         Nutrition nutrition = (Nutrition) o;
 
+        if (id != nutrition.id) return false;
         if (calories != nutrition.calories) return false;
         if (carbs != nutrition.carbs) return false;
-        return product.equals(nutrition.product);
+        return product != null ? product.equals(nutrition.product) : nutrition.product == null;
     }
 
     @Override
     public int hashCode() {
-        int result = product.hashCode();
+        int result = (int) (id ^ (id >>> 32));
+        result = 31 * result + (product != null ? product.hashCode() : 0);
         result = 31 * result + calories;
         result = 31 * result + carbs;
         return result;
