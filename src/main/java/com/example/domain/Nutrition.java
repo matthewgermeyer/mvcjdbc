@@ -1,11 +1,5 @@
 package com.example.domain;
 
-/**
- * long id
- String product
- int caloires
- int carbs
- */
 public class Nutrition {
     private long id;
     private String product;
@@ -15,31 +9,24 @@ public class Nutrition {
     public long getId() {
         return id;
     }
-
     public void setId(long id) {
         this.id = id;
     }
-
     public String getProduct() {
         return product;
     }
-
     public void setProduct(String product) {
         this.product = product;
     }
-
     public int getCalories() {
         return calories;
     }
-
     public void setCalories(int calories) {
         this.calories = calories;
     }
-
     public int getCarbs() {
         return carbs;
     }
-
     public void setCarbs(int carbs) {
         this.carbs = carbs;
     }
