@@ -33,7 +33,6 @@ public class NutritionController {
 
     //create a nutrition
     //its making something so use the @PostMapping annotation
-    //followed by the "/url" we are using.
     @PostMapping("/nutrition")
     //return statement is a String .. aka html file called result(.html)
     public String nutSubmit(Model model, @ModelAttribute Nutrition nutrition) {
@@ -44,32 +43,3 @@ public class NutritionController {
     }
 
 }
-
-    //Methods
-    //getNutritions
-
-//    public List<Nutrition> getNutritions() {
-//        List<Nutrition> nuts = new ArrayList<>();
-//
-//        return nuts;
-//    }
-
-/* @GetMapping("/greeting")
-    public String greetingForm(Model model) {
-        model.addAttribute("greeting", new Greeting());
-        return "greeting";
-    }
- */
-    //getEmptyNut returns an empty Nut
-
-//    public Nutrition getEmptyNut(){
-//        Nutrition nut = new Nutrition();
-//        nut.setProduct("");
-//        nut.setCarbs(0);
-//        nut.setCalories(0);
-//        return nut;
-//    }
-
-    //post method to create a Nutrition.
-
-
