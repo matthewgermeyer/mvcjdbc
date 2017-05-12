@@ -10,9 +10,16 @@
 <h1 class="text-center">Create a Nutrition!</h1>
 <div class="container">
 <form action="#" th:action="@{/nutrition}" th:object="${nutrition}" method="post">
+
     <p class="text-center">Product: <input type="text" th:field="*{product}" /></p>
+    <p class="text-center" th:if="${#fields.hasErrors('product')}" th:errors="*{product}">Product Error</p>
+
     <p class="text-center">Calories: <input type="text" th:field="*{calories}" /></p>
+    <p class="text-center" th:if="${#fields.hasErrors('calories')}" th:errors="*{calories}">Calories Error</p>
+
     <p class="text-center">Carbs: <input type="text" th:field="*{carbs}" /></p>
+    <p class="text-center" th:if="${#fields.hasErrors('carbs')}" th:errors="*{carbs}">Carbs Error</p>
+
 
 
 

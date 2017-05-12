@@ -5,10 +5,12 @@ import com.example.service.NutritionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
 
 @Controller
 public class NutritionController {
@@ -27,18 +29,21 @@ public class NutritionController {
     public String getNutritions(Model model) {
         //get all a list of Nuts from service
         //model.addAtribute nutritions from above
-        model.addAttribute("nutritions",nutritionService.findAll());
+        model.addAttribute("nutritions", nutritionService.findAll());
         return "nutritions";
     }
 
-    //create a nutrition
-    //its making something so use the @PostMapping annotation
+
     @PostMapping("/nutrition")
-    //return statement is a String .. aka html file called result(.html)
-    public String nutSubmit(Model model, @ModelAttribute Nutrition nutrition) {
-        nutritionService.add(nutrition);
-        //return to the page with the full list of nuts.
-        model.addAttribute("nutritions",nutritionService.findAll());
+
+//    public String nutSubmit(Model model, @ModelAttribute Nutrition nutrition) {
+//        nutritionService.add(nutrition);
+//        model.addAttribute("nutritions",nutritionService.findAll());
+//
+    public String nutSubmit(@Valid Nutrition nutrition, BindingResult bindingResult) {
+    if (bindingResult.hasErrors()){
+        return "nutrition";
+        }
         return "nutritions";
     }
 

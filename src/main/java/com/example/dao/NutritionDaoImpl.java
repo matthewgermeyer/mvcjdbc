@@ -1,5 +1,6 @@
 package com.example.dao;
 
+import com.example.common.FoodType;
 import com.example.domain.Nutrition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,10 +30,12 @@ public class NutritionDaoImpl implements NutritionDao {
     @Transactional
     public void add(Nutrition nutrition) {
         log.info("adding " + nutrition);
-        jdbcTemplate.update("INSERT INTO nutrition(product, calories, carbs) VALUES (?,?,?)",
+        jdbcTemplate.update("INSERT INTO nutrition(product, calories, carbs, clean, foodType) VALUES (?,?,?,?,?)",
                 nutrition.getProduct(),
                 nutrition.getCalories(),
-                nutrition.getCarbs());
+                nutrition.getCarbs(),
+                nutrition.isClean(),
+                nutrition.getFoodType().name());
     }
 
     //Find Nut by id
@@ -64,9 +67,9 @@ public class NutritionDaoImpl implements NutritionDao {
     @Transactional
     public void update(Nutrition nutrition) {
         log.info("UPDATING Nut called --> " + nutrition);
-        String sql = "update nutrition set product = ?, calories = ?, carbs = ? WHERE id = ?;";
+        String sql = "update nutrition set product = ?, calories = ?, carbs = ?, clean = ?, foodType = ? WHERE id = ?";
 
-        int numUpdated = jdbcTemplate.update(sql, nutrition.getProduct(), nutrition.getCalories(), nutrition.getCarbs(), nutrition.getId());
+        int numUpdated = jdbcTemplate.update(sql, nutrition.getProduct(), nutrition.getCalories(), nutrition.getCarbs(), nutrition.isClean(), nutrition.getFoodType().name(), nutrition.getId());
 
         System.out.println("\n\n\n num updated ---> "+ numUpdated);
     }
@@ -98,6 +101,10 @@ public class NutritionDaoImpl implements NutritionDao {
             nutrition.setProduct(rs.getString("product"));
             nutrition.setCalories(rs.getInt("calories"));
             nutrition.setCarbs(rs.getInt("carbs"));
+            nutrition.setClean(rs.getBoolean("clean"));
+            nutrition.setFoodType(FoodType.valueOf(rs.getString("foodType")));
+
+
             return nutrition;
         }
     }

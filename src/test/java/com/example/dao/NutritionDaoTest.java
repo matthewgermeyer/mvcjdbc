@@ -1,5 +1,6 @@
 package com.example.dao;
 
+import com.example.common.FoodType;
 import com.example.domain.Nutrition;
 import org.junit.Assert;
 import org.junit.Test;
@@ -14,7 +15,6 @@ import java.util.Random;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class NutritionDaoTest {
-
     Random random = new Random();
 
     @Autowired
@@ -22,90 +22,36 @@ public class NutritionDaoTest {
 
     @Test
     public void testCreate() {
-        Nutrition nutrition = new Nutrition();
-
-        String product = Integer.toString(random.nextInt());
-        nutrition.setProduct(product);
-
-        int calories = random.nextInt();
-        nutrition.setCalories(calories);
-
-        int carbs = random.nextInt();
-        nutrition.setCarbs(carbs);
-
-        nutritionDao.add(nutrition);
+        Nutrition nutrition = createNut();
 
         List<Nutrition> nutritions = nutritionDao.findAll();
         Assert.assertNotNull(nutritions);
         Assert.assertTrue(nutritions.size() > 0);
-        boolean found = false;
-        for (Nutrition nut : nutritions) {
-            if (nut.equals(nutrition)) {
-                found = true;
-                break;
-            }
-        }
 
-        Assert.assertTrue("Could not find " + nutrition, found);
+        Nutrition foundNut = null;
+        foundNut = findNutritionInList(nutrition);
+
+        System.out.println("\n\n\n" + nutrition);
+        System.out.println("\n\n\n" + foundNut);
+        Assert.assertTrue("Mismatch in list!! " + nutrition, nutrition.equals(foundNut));
     }
 
     @Test
     public void testFind() {
-        Nutrition nutrition = new Nutrition();
+        Nutrition nutrition = createNut();
 
-        String product = Integer.toString(random.nextInt());
-        nutrition.setProduct(product);
+        Nutrition foundNut = null;
+        foundNut = findNutritionInList(nutrition);
 
-        int calories = random.nextInt();
-        nutrition.setCalories(calories);
-
-        int carbs = random.nextInt();
-        nutrition.setCarbs(carbs);
-
-        //creates a row in the db
-        nutritionDao.add(nutrition);
-
-        //return back a List of the db entries...
-        List<Nutrition> nutritions = nutritionDao.findAll();
-        Assert.assertNotNull(nutritions);
-        Assert.assertTrue(nutritions.size() > 0);
-        Nutrition foundNutrition = null;
-        for (Nutrition nut : nutritions) {
-            if (nut.equals(nutrition)) {
-                foundNutrition = nut;
-                break;
-            }
-        }
-
-        Nutrition comparisonNut = nutritionDao.find(foundNutrition.getId());
-        Assert.assertTrue("Errr, they should be the same", foundNutrition.equals(comparisonNut) );
+        Nutrition comparisonNut = nutritionDao.find(foundNut.getId());
+        Assert.assertTrue("Errr, they should be the same", foundNut.equals(comparisonNut));
     }
 
     @Test
-    public void testDelete(){
-        Nutrition nutrition = new Nutrition();
-
-        String product = Integer.toString(random.nextInt());
-        nutrition.setProduct(product);
-
-        int calories = random.nextInt();
-        nutrition.setCalories(calories);
-
-        int carbs = random.nextInt();
-        nutrition.setCarbs(carbs);
-
-        nutritionDao.add(nutrition);
-
-        List<Nutrition> nutritions = nutritionDao.findAll();
-        Assert.assertNotNull(nutritions);
-        Assert.assertTrue(nutritions.size() > 0);
+    public void testDelete() {
+        Nutrition nutrition = createNut();
         Nutrition foundNut = null;
-        for (Nutrition nut : nutritions) {
-            if (nut.equals(nutrition)) {
-                foundNut = nut;
-                break;
-            }
-        }
+        foundNut = findNutritionInList(nutrition);
 
         Assert.assertNotNull(foundNut);
         nutritionDao.delete(foundNut.getId());
@@ -113,77 +59,63 @@ public class NutritionDaoTest {
     }
 
     @Test
-    public void testUpdate(){
-        //make a new one.
-        Nutrition nut = new Nutrition();
-        nut.setCalories(random.nextInt());
-        nut.setCarbs(random.nextInt());
-        nut.setProduct("Orange");
-        //put it in the list
-        nutritionDao.add(nut);
-
-        //find it in the list, (like in delete)
-        List<Nutrition> nutritions = nutritionDao.findAll();
-        Assert.assertNotNull(nutritions);
-        Assert.assertTrue(nutritions.size() > 0);
-        Nutrition foundNut = null;
-        for (Nutrition n : nutritions) {
-            if (n.equals(nut)) {
-                foundNut = n;
-                break;
-            }
-        }
+    public void testUpdate() {
+        Nutrition nutrition = createNut();
+        Nutrition foundNut = findNutritionInList(nutrition);
         Assert.assertNotNull(foundNut);
-        //change some of its fields...
+
+        //Scramble some fields.
         foundNut.setCarbs(random.nextInt());
         foundNut.setCalories(random.nextInt());
-        //call update.
+
         nutritionDao.update(foundNut);
 
-        //call find again and compare
-        Nutrition foundNut2 = null;
-        nutritions = nutritionDao.findAll();
-        Assert.assertNotNull(nutritions);
-        Assert.assertTrue(nutritions.size() > 0);
-        for (Nutrition n : nutritions) {
-            if (n.equals(foundNut)) {
-                foundNut2 = n;
-                break;
-            }
-        }
-        Assert.assertEquals(foundNut,foundNut2);
+        Nutrition foundNut2 = findNutritionInList(foundNut);
+
+        Assert.assertEquals(foundNut, foundNut2);
 
     }
+
     @Test
-    public void multiNewTest(){
+    public void multiNewTest() {
+        Nutrition nutrition = createNut();
+        Nutrition nutrition2 = createNut();
+        Assert.assertFalse("Shoulda have been different...", nutrition.equals(nutrition2));
+    }
+
+
+    //DRY Methods
+
+    //Look in 1) Nutritions List for 2) a given nutrition -> if it's in there, return it.
+    private Nutrition findNutritionInList(Nutrition nutrition) {
+        List<Nutrition> nutritions = nutritionDao.findAll();
+        for (Nutrition nut : nutritions) {
+            if (nut.equals(nutrition)) {
+                return nut;
+            }
+        }
+        return null;
+    }
+
+    //Create a random nut & put it in the list -> nutritions
+    private Nutrition createNut() {
         Nutrition nutrition = new Nutrition();
 
         String product = Integer.toString(random.nextInt());
-        nutrition.setProduct(product);
-
         int calories = random.nextInt();
-        nutrition.setCalories(calories);
-
         int carbs = random.nextInt();
+        Boolean isClean = random.nextBoolean();
+        FoodType foodTypes[] = FoodType.values();
+
+        nutrition.setProduct(product);
+        nutrition.setCalories(calories);
         nutrition.setCarbs(carbs);
+        nutrition.setClean(isClean);
+        nutrition.setFoodType(foodTypes[random.nextInt(foodTypes.length)]);
 
         nutritionDao.add(nutrition);
-
-        Nutrition nutrition2 = new Nutrition();
-
-         product = Integer.toString(random.nextInt());
-        nutrition2.setProduct(product);
-
-         calories = random.nextInt();
-        nutrition2.setCalories(calories);
-
-         carbs = random.nextInt();
-        nutrition2.setCarbs(carbs);
-
-        nutritionDao.add(nutrition2);
-
-        Assert.assertFalse("Shoulda have been different...", nutrition.equals(nutrition2));
-
-
+        return nutrition;
     }
+
+
 }

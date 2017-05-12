@@ -1,10 +1,32 @@
 package com.example.domain;
 
+import com.example.common.FoodType;
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Nutrition {
     private long id;
+
+    @NotNull
+    @Size(min=2, max = 50)
     private String product;
+
+    @NotNull
+    @Min(0)
     private int calories;
+
+    @NotNull
+    @Min(0)
     private int carbs;
+
+    private boolean clean;
+
+    @NotNull
+    private FoodType foodType;
+
+
 
     public long getId() {
         return id;
@@ -31,6 +53,22 @@ public class Nutrition {
         this.carbs = carbs;
     }
 
+    public boolean isClean() {
+        return clean;
+    }
+
+    public void setClean(boolean clean) {
+        this.clean = clean;
+    }
+
+    public FoodType getFoodType() {
+        return foodType;
+    }
+
+    public void setFoodType(FoodType foodType) {
+        this.foodType = foodType;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -38,18 +76,20 @@ public class Nutrition {
 
         Nutrition nutrition = (Nutrition) o;
 
-        if (id != nutrition.id) return false;
         if (calories != nutrition.calories) return false;
         if (carbs != nutrition.carbs) return false;
-        return product != null ? product.equals(nutrition.product) : nutrition.product == null;
+        if (clean != nutrition.clean) return false;
+        if (product != null ? !product.equals(nutrition.product) : nutrition.product != null) return false;
+        return foodType == nutrition.foodType;
     }
 
     @Override
     public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
-        result = 31 * result + (product != null ? product.hashCode() : 0);
+        int result = product != null ? product.hashCode() : 0;
         result = 31 * result + calories;
         result = 31 * result + carbs;
+        result = 31 * result + (clean ? 1 : 0);
+        result = 31 * result + (foodType != null ? foodType.hashCode() : 0);
         return result;
     }
 
@@ -60,6 +100,8 @@ public class Nutrition {
                 ", product='" + product + '\'' +
                 ", calories=" + calories +
                 ", carbs=" + carbs +
+                ", clean=" + clean +
+                ", foodType=" + foodType +
                 '}';
     }
 }
