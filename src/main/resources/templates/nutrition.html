@@ -23,6 +23,21 @@
     <p class="text-center">Clean: <input type="text" th:field="*{clean}" /></p>
     <p class="text-center" th:if="${#fields.hasErrors('clean')}" th:errors="*{clean}">Clean Error</p>
 
+    <!--Radio BUttons for clean-->
+    <!--<div class="radio">-->
+        <!--<label><input type="radio" name="optradio">Clean</label>-->
+    <!--</div>-->
+    <!--<div class="radio">-->
+        <!--<label><input type="radio" name="optradio">Clean</label>-->
+    <!--</div>-->
+
+<!--Food Type dropdown (not working)-->
+    <!--<br/>FoodType:-->
+    <!--<select class="text-center" th:field="*{foodType}">-->
+        <!--<option th:each="foodType : ${foodType}" th:value="${foodType}" th:text="${foodType}"></option>-->
+    <!--</select>-->
+
+   <!--Food Type = typed input...-->
     <p class="text-center">Food Type: <input type="text" th:field="*{foodType}" /></p>
     <p class="text-center" th:if="${#fields.hasErrors('foodType')}" th:errors="*{foodType}">foodType Error</p>
 
@@ -32,13 +47,13 @@
        </p>
 
 
+</form>
+
     <blockquote>
         <p class="text-center ">“Let food be thy medicine and medicine be thy food”  </p>
         <footer class="text-center ">Hippocrates</footer>
     </blockquote>
 
-
-</form>
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
