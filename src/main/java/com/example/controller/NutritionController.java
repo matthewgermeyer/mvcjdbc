@@ -35,15 +35,12 @@ public class NutritionController {
 
 
     @PostMapping("/nutrition")
-
-//    public String nutSubmit(Model model, @ModelAttribute Nutrition nutrition) {
-//        nutritionService.add(nutrition);
-//        model.addAttribute("nutritions",nutritionService.findAll());
-//
-    public String nutSubmit(@Valid Nutrition nutrition, BindingResult bindingResult) {
-    if (bindingResult.hasErrors()){
-        return "nutrition";
+    public String nutSubmit(@Valid Nutrition nutrition, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()){
+            return "nutrition";
         }
+        nutritionService.add(nutrition);
+        model.addAttribute("nutritions", nutritionService.findAll());
         return "nutritions";
     }
 

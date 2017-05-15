@@ -38,7 +38,6 @@ public class NutritionDaoImpl implements NutritionDao {
                 nutrition.getFoodType().name());
     }
 
-    //Find Nut by id
     @Override
     public Nutrition find(long id) {
         log.info("finding Nutrition object with id -->" + id);
@@ -54,7 +53,6 @@ public class NutritionDaoImpl implements NutritionDao {
     }
 
     @Override
-    //Select aka findAll
     public List<Nutrition> findAll() {
         List<Nutrition> nutritions = this.jdbcTemplate.query(
                 "select * from nutrition",
@@ -74,7 +72,6 @@ public class NutritionDaoImpl implements NutritionDao {
         System.out.println("\n\n\n num updated ---> "+ numUpdated);
     }
 
-    //delete a Nut
     @Override
     @Transactional
     public void delete(long id) {
@@ -84,7 +81,6 @@ public class NutritionDaoImpl implements NutritionDao {
 
     }
 
-    //add Many
     @Override
     @Transactional
     public void add(List<Nutrition> nutritions) {

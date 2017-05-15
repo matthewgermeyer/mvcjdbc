@@ -20,10 +20,17 @@
     <p class="text-center">Carbs: <input type="text" th:field="*{carbs}" /></p>
     <p class="text-center" th:if="${#fields.hasErrors('carbs')}" th:errors="*{carbs}">Carbs Error</p>
 
+    <p class="text-center">Clean: <input type="text" th:field="*{clean}" /></p>
+    <p class="text-center" th:if="${#fields.hasErrors('clean')}" th:errors="*{clean}">Clean Error</p>
+
+    <p class="text-center">Food Type: <input type="text" th:field="*{foodType}" /></p>
+    <p class="text-center" th:if="${#fields.hasErrors('foodType')}" th:errors="*{foodType}">foodType Error</p>
 
 
+    <p class ="text-center "><input type="submit" value="Submit" /> <input type="reset" value="Reset" />
+        <a href="/nutritions" class="btn btn-info text-center  " role="button">Cancel</a>
+       </p>
 
-    <p class="text-center "><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 
     <blockquote>
         <p class="text-center ">“Let food be thy medicine and medicine be thy food”  </p>

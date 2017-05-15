@@ -20,12 +20,16 @@
                 <th class="text-center"> Product </th>
                 <th class="text-center"> Calories </th>
                 <th class="text-center"> Carbs </th>
+                <th class="text-center"> Clean </th>
+                <th class="text-center"> Food Type </th>
             </tr>
             <tr th:each="nutrition:${nutritions}">
                 <td class="text-center" th:text = "${nutrition.id}"></td>
                 <td class="text-center" th:text = "${nutrition.product}"></td>
                 <td class="text-center" th:text = "${nutrition.calories}"></td>
                 <td class="text-center" th:text = "${nutrition.carbs}"></td>
+                <td class="text-center" th:text = "${nutrition.clean}"></td>
+                <td class="text-center" th:text = "${nutrition.foodType}"></td>
             </tr>
         </table>
     </div>
@@ -34,7 +38,9 @@
 <div>
     <form class="text-center">
         <button formaction="http://localhost:8080/nutrition">Make a new Nut!</button>
-        <a href="/nutrition"><input type="button" value="Submit"/></a>
+        <p> <a href="/nutrition"><input type="button" value="Submit"/></a>
+            <a href="/nutrition" class="btn btn-info text-center  " role="button">Make a new nut!</a></p>
+
     </form>
 </div>
 
