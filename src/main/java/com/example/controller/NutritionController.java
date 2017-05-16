@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import com.example.common.FoodType;
 import com.example.domain.Nutrition;
 import com.example.service.NutritionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,20 +21,21 @@ public class NutritionController {
     @GetMapping("/nutrition")
     public String getEmptyNut(Model model) {
         model.addAttribute("nutrition", new Nutrition());
+        model.addAttribute("foodType", FoodType.values());
         return "nutrition";
     }
 
     @GetMapping("/nutrition/{id}")
     public String getStudent(@PathVariable("id") Long id, Model model) {
         model.addAttribute("nutrition", nutritionService.find(id.intValue()));
+//        model.addAttribute("foodType", FoodType.values());
 
         return "view-nutrition";
     }
 
+
     @RequestMapping("/nutritions")
     public String getNutritions(Model model) {
-        //get all a list of Nuts from service
-        //model.addAtribute nutritions from above
         model.addAttribute("nutritions", nutritionService.findAll());
         return "nutritions";
     }
@@ -41,13 +43,30 @@ public class NutritionController {
 
     @PostMapping("/nutrition")
     public String nutSubmit(@Valid Nutrition nutrition, BindingResult bindingResult, Model model) {
-        if (bindingResult.hasErrors()){
+        model.addAttribute("foodType", FoodType.values());
+        if (bindingResult.hasErrors()) {
+
+
+            System.out.println("\n\n\n return to nutrition..");
+            System.out.println(bindingResult);
             return "nutrition";
         }
         nutritionService.add(nutrition);
         model.addAttribute("nutritions", nutritionService.findAll());
         return "nutritions";
+
     }
+
+    @RequestMapping("/nutrition-delete")
+    public String deleteNutrition(@RequestParam(value = "nutritionId", required = true) Long nutritionId, @RequestParam(value = "action", required = true) String action, Model model) {
+        if ("remove".equals(action)) {
+            nutritionService.delete(nutritionId);
+        }
+
+        model.addAttribute("nutritions", nutritionService.findAll());
+        return "nutritions";
+    }
+
 
     //Under Construction --Delete
     @DeleteMapping("/nutrition/{id}")

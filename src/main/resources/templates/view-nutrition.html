@@ -23,7 +23,14 @@
 <a href="/nutritions">See Nuts!</a>
 <a href="/nutrition">Add Nut!</a>
 <a href="/nutrition">Edit (coming soon)</a>
-<a href="/nutrition">Delete (coming soon)</a>
+
+<form action="#" th:action="@{/nutrition-delete}">
+    <input type="hidden" th:value="${nutrition.id}" name="nutritionId" />
+    <input
+        type="hidden" value="remove" name="action" /> <input
+        type="submit" value="Delete" />
+</form>
+
 
 
 
