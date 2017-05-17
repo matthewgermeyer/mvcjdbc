@@ -11,13 +11,11 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-
 
 @Controller
 public class NutritionController {
@@ -26,7 +24,6 @@ public class NutritionController {
     @Autowired
     NutritionService nutritionService;
 
-    //return an Empty Nutrition
     @GetMapping("/nutrition")
     public String getEmptyNut(Model model) {
         model.addAttribute("nutrition", new Nutrition());
@@ -34,27 +31,10 @@ public class NutritionController {
         return "nutrition";
     }
 
-    @GetMapping("/nutrition/{id}")
-    public String getStudent(@PathVariable("id") Long id, Model model) {
-        model.addAttribute("nutrition", nutritionService.find(id.intValue()));
-//        model.addAttribute("foodType", FoodType.values());
-
-        return "view-nutrition";
-    }
-
-
-    @RequestMapping("/nutritions")
-    public String getNutritions(Model model) {
-        model.addAttribute("nutritions", nutritionService.findAll());
-        return "nutritions";
-    }
-
-
     @PostMapping("/nutrition")
     public String nutSubmit(@Valid Nutrition nutrition, BindingResult bindingResult, Model model) {
         model.addAttribute("foodType", FoodType.values());
         if (bindingResult.hasErrors()) {
-
 
             System.out.println("\n\n\n return to nutrition..");
             System.out.println(bindingResult);
@@ -64,6 +44,21 @@ public class NutritionController {
         model.addAttribute("nutritions", nutritionService.findAll());
         return "nutritions";
 
+    }
+
+    //Drill Down
+    @GetMapping("/nutrition/{id}")
+    public String getNut(@PathVariable("id") Long id, Model model) {
+        model.addAttribute("nutrition", nutritionService.find(id.intValue()));
+
+        return "view-nutrition";
+    }
+
+    @RequestMapping("/nutritions")
+    public String getNutritions(Model model) {
+        model.addAttribute("nutritions", nutritionService.findAll());
+
+        return "nutritions";
     }
 
     @RequestMapping("/nutrition-delete")
@@ -76,13 +71,30 @@ public class NutritionController {
         return "nutritions";
     }
 
+    //Drill Down -> edit
+    @RequestMapping("/nutrition-editMode")
+    public String editNutrition(@RequestParam(value = "id", required = true) Long nutritionId, Model model) {
+        System.out.println("\n\n\nin edit mode.");
 
-    //Under Construction --Delete
-    @DeleteMapping("/nutrition/{id}")
-    public String deleteStudent(@PathVariable("id") Long id, Model model) {
-        nutritionService.delete(id);
+        model.addAttribute("nutrition", nutritionService.find(nutritionId));
+        model.addAttribute("foodType", FoodType.values());
+        return "edit-nutrition";
+    }
+
+    //nutrition-editMode -> Post Update..
+    @PostMapping("/nutrition-update")
+    public String nutUpdate(@Valid Nutrition nutrition, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()) {
+
+            System.out.println("\n\n\n return to nutrition..");
+            System.out.println(bindingResult);
+            return "edit-nutrition";
+        }
+        System.out.println("\n\n updating.. "+nutrition);
+        nutritionService.update(nutrition);
         model.addAttribute("nutritions", nutritionService.findAll());
         return "nutritions";
+
     }
 
     @ExceptionHandler(value = Exception.class)

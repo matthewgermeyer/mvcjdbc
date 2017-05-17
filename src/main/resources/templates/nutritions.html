@@ -24,7 +24,6 @@
             </tr>
             <tr th:each="nutrition:${nutritions}">
 
-
                 <td align="center"> <a th:href="@{'/nutrition/' + ${nutrition.id}}" th:text="${nutrition.id}"></a></td>
                 <td class="text-center" th:text = "${nutrition.product}"></td>
                 <td class="text-center" th:text = "${nutrition.calories}"></td>
@@ -33,8 +32,6 @@
                 <td class="text-center" th:text = "${nutrition.foodType}"></td>
             </tr>
         </table>
-        <!--Basic link back to nutrition-->
-        <!--<a href="/nutrition">Add Nut</a>-->
     </div>
 
 

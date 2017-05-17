@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.common.FoodType;
 import com.example.domain.Nutrition;
 import org.junit.Assert;
 import org.junit.Test;
@@ -34,6 +35,8 @@ public class NutritionServiceTest {
 
         int carbs = random.nextInt();
         nutrition.setCarbs(carbs);
+        nutrition.setClean(true);
+        nutrition.setFoodType(FoodType.FAT);
 
         nutritionService.add(nutrition);
 

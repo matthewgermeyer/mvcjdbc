@@ -71,9 +71,7 @@ public class NutritionDaoTest {
         nutritionDao.update(foundNut);
 
         Nutrition foundNut2 = findNutritionInList(foundNut);
-
         Assert.assertEquals(foundNut, foundNut2);
-
     }
 
     @Test
@@ -85,8 +83,6 @@ public class NutritionDaoTest {
 
 
     //DRY Methods
-
-    //Look in 1) Nutritions List for 2) a given nutrition -> if it's in there, return it.
     private Nutrition findNutritionInList(Nutrition nutrition) {
         List<Nutrition> nutritions = nutritionDao.findAll();
         for (Nutrition nut : nutritions) {
@@ -97,7 +93,7 @@ public class NutritionDaoTest {
         return null;
     }
 
-    //Create a random nut & put it in the list -> nutritions
+    //Create Nut & Add to List of Nuts.
     private Nutrition createNut() {
         Nutrition nutrition = new Nutrition();
 

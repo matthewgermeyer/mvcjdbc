@@ -23,24 +23,7 @@
     <p class="text-center">Clean: <input type="text" th:field="*{clean}" /></p>
     <p class="text-center" th:if="${#fields.hasErrors('clean')}" th:errors="*{clean}">Clean Error</p>
 
-    <!--Radio BUttons for clean-->
-    <!--<div class="radio">-->
-        <!--<label><input type="radio" name="optradio">Clean</label>-->
-    <!--</div>-->
-    <!--<div class="radio">-->
-        <!--<label><input type="radio" name="optradio">Clean</label>-->
-    <!--</div>-->
 
-<!--Food Type dropdown (not working)-->
-    <!--<br/>FoodType:-->
-    <!--<select class="text-center" th:field="*{foodType}">-->
-        <!--<option th:each="foodType : ${foodType}" th:value="${foodType}" th:text="${foodType}"></option>-->
-    <!--</select>-->
-
-
-   <!--Food Type = typed input...-->
-    <!--<p class="text-center">Food Type: <input type="text" th:field="*{foodType}" /></p>-->
-    <!--<p class="text-center" th:if="${#fields.hasErrors('foodType')}" th:errors="*{foodType}">foodType Error</p>-->
 <div class="text-center">
     <br/>
     Food Type?
@@ -51,8 +34,14 @@
     </select>
 </div>
 
-    <p class ="text-center "><input type="submit" value="Submit" /> <input type="reset" value="Reset" />
+    <p class ="text-center ">
+
+        <input type="submit" value="Submit" />
+
+        <input type="reset" value="Reset" />
+
         <a href="/nutritions" class="btn btn-info text-center  " role="button">Cancel</a>
+
        </p>
 
 

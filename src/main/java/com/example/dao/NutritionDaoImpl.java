@@ -100,7 +100,6 @@ public class NutritionDaoImpl implements NutritionDao {
             nutrition.setClean(rs.getBoolean("clean"));
             nutrition.setFoodType(FoodType.valueOf(rs.getString("foodType")));
 
-
             return nutrition;
         }
     }
