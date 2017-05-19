@@ -1,32 +1,16 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <title>Getting Started: Handling Form Submission</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css"/>
 
-    <script type="text/javascript">
-         <!--
-            function getConfirmation(){
-               var retVal = confirm("Delete?  Really?");
-               if( retVal == true ){
-                  document.write ("It's gone!");
-                  return true;
-               }
-               else{
-                  document.write ("Cancel - did not delete");
-                  return false;
-               }
-            }
-         //-->
-      </script>
 </head>
 <body>
 <h1 class="text-center">Long nutrition info... </h1>
 
-<div align="center" class="text-center">
-    <table class ="table-striped table-bordered table-hover ">
+    <table class = "table-striped table-bordered table-hover ">
         <tr>
             <th class="text-center"> Id </th>
             <th class="text-center"> Product </th>
@@ -44,24 +28,19 @@
             <td class="text-center" th:text = "${nutrition.foodType}"></td>
         </tr>
     </table>
-</div>
-<!--<p th:text="${nutrition.id}" > ID </p>-->
-<!--<p th:text="${nutrition.product}"> PRODUCT  </p>-->
-<!--<p th:text="${nutrition.calories}">  CALORIES </p>-->
-<!--<p th:text="${nutrition.carbs}">  CARBS</p>-->
-<!--<p th:text="${nutrition.clean}"> CLEAN </p>-->
-<!--<p th:text="${nutrition.foodType}">  FOODTYPE </p>-->
 
 <a href="/nutritions">See Nuts!</a>
 <a href="/nutrition">Add Nut!</a>
 <a th:href="@{/nutrition-editMode(id=${nutrition.id})}"><input type="button" value="Edit"/></a>
 
-<form action="#" th:action="@{/nutrition-delete}">
+
+<form action="#" th:action="@{/nutrition-delete}" sec:authorize="hasRole('ROLE_ADMIN')">
+
     <input type="hidden" th:value="${nutrition.id}" name="nutritionId" />
     <input type="hidden" value="remove" name="action" />
-    <input type="submit" value="Delete" onclick="getConfirmation();"/>
-</form>
+    <input type="submit" value="Delete" onclick="return confirm('Are you sure?')"/>
 
+</form>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 </body>

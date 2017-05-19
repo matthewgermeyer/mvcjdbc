@@ -97,6 +97,17 @@ public class NutritionController {
 
     }
 
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @RequestMapping("/hello-admin")
+    public String helloAdmin() {
+        return "hello-admin";
+    }
+
+
     @ExceptionHandler(value = Exception.class)
     public ModelAndView handleDefaultErrors(final Exception exception, final HttpServletRequest request, final HttpServletResponse resp) {
         logger.warn(exception.getMessage() + "\n" + stackTraceAsString(exception));
