@@ -32,16 +32,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll();
     }
 
-
-//    @Autowired
-//    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-//        auth.jdbcAuthentication().dataSource(this.dataSource)
-//                .usersByUsernameQuery("select username, password, enabled from users where username=?")
-//                .authoritiesByUsernameQuery("select username, authority from authorities where username = ?")
-//                .withUser("matt").password("password").roles("USER");
-//    }
-
-
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication().dataSource(this.dataSource)

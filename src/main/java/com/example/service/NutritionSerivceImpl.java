@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class NutritionSerivceImpl implements  NutritionService{
+public class NutritionSerivceImpl implements NutritionService {
 
 
     @Autowired
@@ -25,20 +25,24 @@ public class NutritionSerivceImpl implements  NutritionService{
     public List<Nutrition> findAll() {
         return nutritionDao.findAll();
     }
+
     @Override
     public Nutrition find(long id) {
         return nutritionDao.find(id);
     }
+
     @Override
     @Transactional
     public void update(Nutrition nutrition) {
         nutritionDao.update(nutrition);
     }
+
     @Override
     @Transactional
     public void delete(long id) {
         nutritionDao.delete(id);
     }
+
     @Override
     @Transactional
     public void add(List<Nutrition> nutritions) {

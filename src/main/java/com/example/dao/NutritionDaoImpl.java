@@ -15,9 +15,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * Created by MattyG on 5/8/17.
- */
 @Repository
 public class NutritionDaoImpl implements NutritionDao {
     private static final Logger log = LoggerFactory.getLogger(NutritionDaoImpl.class);
@@ -30,12 +27,15 @@ public class NutritionDaoImpl implements NutritionDao {
     @Transactional
     public void add(Nutrition nutrition) {
         log.info("adding " + nutrition);
-        jdbcTemplate.update("INSERT INTO nutrition(product, calories, carbs, clean, foodType) VALUES (?,?,?,?,?)",
+        jdbcTemplate.update("INSERT INTO nutrition(product, calories, carbs, clean, foodType, product_id) VALUES (?,?,?,?,?,?)",
                 nutrition.getProduct(),
                 nutrition.getCalories(),
                 nutrition.getCarbs(),
                 nutrition.isClean(),
-                nutrition.getFoodType().name());
+                nutrition.getFoodType().name(),
+                nutrition.getProductId());
+
+
     }
 
     @Override
@@ -69,7 +69,7 @@ public class NutritionDaoImpl implements NutritionDao {
 
         int numUpdated = jdbcTemplate.update(sql, nutrition.getProduct(), nutrition.getCalories(), nutrition.getCarbs(), nutrition.isClean(), nutrition.getFoodType().name(), nutrition.getId());
 
-        System.out.println("\n\n\n num updated ---> "+ numUpdated);
+        System.out.println("\n\n\n num updated ---> " + numUpdated);
     }
 
     @Override
@@ -89,19 +89,42 @@ public class NutritionDaoImpl implements NutritionDao {
         }
     }
 
-    private static class NutritionMapper implements RowMapper<Nutrition> {
-        @Override
-        public Nutrition mapRow(ResultSet rs, int rowNum) throws SQLException {
-            Nutrition nutrition = new Nutrition();
-            nutrition.setId(rs.getLong("id"));
-            nutrition.setProduct(rs.getString("product"));
-            nutrition.setCalories(rs.getInt("calories"));
-            nutrition.setCarbs(rs.getInt("carbs"));
-            nutrition.setClean(rs.getBoolean("clean"));
-            nutrition.setFoodType(FoodType.valueOf(rs.getString("foodType")));
+    @Override
+    public List<Nutrition> findByProductId(int id) {
 
-            return nutrition;
-        }
+        List<Nutrition> nutritions = jdbcTemplate.query(
+                "select * from nutrition where product_id = ?",
+                new NutritionMapper(),
+                new Integer(id));
+
+        log.info("Found " + nutritions.size() + " nutritions");
+        return nutritions;
     }
+
+
+    // find all the nutritions that have productId = passed int id
+    //Do this with a SQL statement:
+    // Select * from nutritions where productId = ?
+
+    // ? = int id passed.
+    //populate the list
+    //return the list.
+
+
+private static class NutritionMapper implements RowMapper<Nutrition> {
+    @Override
+    public Nutrition mapRow(ResultSet rs, int rowNum) throws SQLException {
+        Nutrition nutrition = new Nutrition();
+        nutrition.setId(rs.getLong("id"));
+        nutrition.setProduct(rs.getString("product"));
+        nutrition.setCalories(rs.getInt("calories"));
+        nutrition.setCarbs(rs.getInt("carbs"));
+        nutrition.setClean(rs.getBoolean("clean"));
+        nutrition.setFoodType(FoodType.valueOf(rs.getString("foodType")));
+        nutrition.setProductId(rs.getInt("product_id"));
+
+        return nutrition;
+    }
+}
 
 }

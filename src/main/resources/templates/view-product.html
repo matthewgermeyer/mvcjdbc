@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PRODUCT INFO</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css"/>
+
+</head>
+<body>
+<h1 class="text-center">Long product info... </h1>
+
+<table class = "table-striped table-bordered table-hover ">
+    <tr>
+        <th class="text-center"> Id </th>
+        <th class="text-center"> Name </th>
+        <th class="text-center"> Company </th>
+    </tr>
+    <tr>
+        <td class="text-center" th:text = "${product.id}"></td>
+        <td class="text-center" th:text = "${product.name}"></td>
+        <td class="text-center" th:text = "${product.company}"></td>
+    </tr>
+</table>
+
+<table>
+
+<tr th:each="nut: ${product.nutritions}">
+    <td align="right">Product:</td>
+    <td th:text="${nut.product}" />
+    <td>
+        <form action="#" th:action="@{/product/nutrition-delete}" method="post">
+            <input type="hidden" th:value="${nut.id}" name="nutritionId"/>
+            <input type="hidden" th:value="${product.id}" name="productId"/>
+
+            <input type="submit" value="Remove"/>
+        </form>
+    </td>
+</tr>
+</table>
+
+<a th:href="@{/nutrition(id=${product.id})}"><input type="button" value="Add a Nutrition to this Product"/></a>
+<a th:href="@{/product-editMode(id=${product.id})}"><input type="button" value="Edit"/></a>
+
+
+<form action="#" th:action="@{/product-delete}" sec:authorize="hasRole('ROLE_ADMIN')">
+
+    <input type="hidden" th:value="${product.id}" name="productId" />
+    <input type="hidden" value="remove" name="action" />
+    <input type="submit" value="Delete" onclick="return confirm('Are you sure?')"/>
+
+</form>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+</body>
+</html>

@@ -10,7 +10,7 @@
 <h1 class="text-center">Create a Nutrition!</h1>
 <div class="container">
 <form action="#" th:action="@{/nutrition}" th:object="${nutrition}" method="post">
-
+    <input type="hidden" th:value="${productId}" name="productId" />
     <p class="text-center">Product: <input type="text" th:field="*{product}" /></p>
     <p class="text-center" th:if="${#fields.hasErrors('product')}" th:errors="*{product}">Product Error</p>
 

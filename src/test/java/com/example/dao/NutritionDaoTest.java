@@ -15,7 +15,7 @@ import java.util.Random;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class NutritionDaoTest {
-    Random random = new Random();
+    static Random random = new Random();
 
     @Autowired
     NutritionDao nutritionDao;
@@ -95,6 +95,13 @@ public class NutritionDaoTest {
 
     //Create Nut & Add to List of Nuts.
     private Nutrition createNut() {
+        Nutrition nutrition = createRandomNut();
+        nutritionDao.add(nutrition);
+        return nutrition;
+    }
+
+    //Create Nut & Add to List of Nuts.
+    public static Nutrition createRandomNut() {
         Nutrition nutrition = new Nutrition();
 
         String product = Integer.toString(random.nextInt());
@@ -108,10 +115,7 @@ public class NutritionDaoTest {
         nutrition.setCarbs(carbs);
         nutrition.setClean(isClean);
         nutrition.setFoodType(foodTypes[random.nextInt(foodTypes.length)]);
-
-        nutritionDao.add(nutrition);
         return nutrition;
     }
-
 
 }

@@ -26,6 +26,9 @@ public class Nutrition {
     @NotNull
     private FoodType foodType;
 
+    @NotNull
+    private int productId;
+
 
 
     public long getId() {
@@ -69,6 +72,14 @@ public class Nutrition {
         this.foodType = foodType;
     }
 
+    public int getProductId() {
+        return productId;
+    }
+
+    public void setProductId(int productId) {
+        this.productId = productId;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -76,20 +87,24 @@ public class Nutrition {
 
         Nutrition nutrition = (Nutrition) o;
 
+        if (id != nutrition.id) return false;
         if (calories != nutrition.calories) return false;
         if (carbs != nutrition.carbs) return false;
         if (clean != nutrition.clean) return false;
+        if (productId != nutrition.productId) return false;
         if (product != null ? !product.equals(nutrition.product) : nutrition.product != null) return false;
         return foodType == nutrition.foodType;
     }
 
     @Override
     public int hashCode() {
-        int result = product != null ? product.hashCode() : 0;
+        int result = (int) (id ^ (id >>> 32));
+        result = 31 * result + (product != null ? product.hashCode() : 0);
         result = 31 * result + calories;
         result = 31 * result + carbs;
         result = 31 * result + (clean ? 1 : 0);
         result = 31 * result + (foodType != null ? foodType.hashCode() : 0);
+        result = 31 * result + productId;
         return result;
     }
 
@@ -102,6 +117,7 @@ public class Nutrition {
                 ", carbs=" + carbs +
                 ", clean=" + clean +
                 ", foodType=" + foodType +
+                ", productId=" + productId +
                 '}';
     }
 }

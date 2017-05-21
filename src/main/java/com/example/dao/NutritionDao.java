@@ -11,7 +11,10 @@ public interface NutritionDao {
     void delete(long id);
     void add(List<Nutrition> nutritions);
     List<Nutrition>findAll();
+    List<Nutrition>findByProductId(int id);
     Nutrition find(long id);
+
+
 
 
 }

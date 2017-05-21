@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css"/>
+</head>
+<body>
+<h1 class="text-center">Create a Product!</h1>
+<div class="container">
+    <form action="#" th:action="@{/product}" th:object="${product}" method="post">
+
+        <p class="text-center">Name: <input type="text" th:field="*{name}" /></p>
+        <p class="text-center" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</p>
+
+        <p class="text-center">Company: <input type="text" th:field="*{company}" /></p>
+        <p class="text-center" th:if="${#fields.hasErrors('company')}" th:errors="*{company}">Company Error</p>
+
+
+
+        <!--<p class="text-center">Carbs: <input type="text" th:field="*{carbs}" /></p>-->
+        <!--<p class="text-center" th:if="${#fields.hasErrors('carbs')}" th:errors="*{carbs}">Carbs Error</p>-->
+
+
+
+        <p class ="text-center ">
+
+            <input type="submit" value="Submit" />
+
+            <input type="reset" value="Reset" />
+
+            <a href="/products" class="btn btn-info text-center  " role="button">Cancel</a>
+
+        </p>
+
+
+    </form>
+
+    <blockquote>
+        <p class="text-center ">“Let food be thy medicine and medicine be thy food”  </p>
+        <footer class="text-center ">Hippocrates</footer>
+    </blockquote>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+</body>
+</html>
