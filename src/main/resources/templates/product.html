@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1 class="text-center">Create a Product!</h1>
-<div class="container">
+<div>
     <form action="#" th:action="@{/product}" th:object="${product}" method="post">
 
         <p class="text-center">Name: <input type="text" th:field="*{name}" /></p>
@@ -18,12 +18,6 @@
         <p class="text-center" th:if="${#fields.hasErrors('company')}" th:errors="*{company}">Company Error</p>
 
 
-
-        <!--<p class="text-center">Carbs: <input type="text" th:field="*{carbs}" /></p>-->
-        <!--<p class="text-center" th:if="${#fields.hasErrors('carbs')}" th:errors="*{carbs}">Carbs Error</p>-->
-
-
-
         <p class ="text-center ">
 
             <input type="submit" value="Submit" />
@@ -31,10 +25,7 @@
             <input type="reset" value="Reset" />
 
             <a href="/products" class="btn btn-info text-center  " role="button">Cancel</a>
-
         </p>
-
-
     </form>
 
     <blockquote>

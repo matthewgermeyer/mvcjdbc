@@ -9,38 +9,39 @@
 </head>
 <body>
 <h1 class="text-center">Long nutrition info... </h1>
+<div><table class = "table-striped table-bordered table-hover ">
+    <tr>
+        <th class="text-center"> Id </th>
+        <th class="text-center"> Product </th>
+        <th class="text-center"> Calories </th>
+        <th class="text-center"> Carbs </th>
+        <th class="text-center"> Clean </th>
+        <th class="text-center"> Food Type </th>
+    </tr>
+    <tr>
+        <td class="text-center" th:text = "${nutrition.id}"></td>
+        <td class="text-center" th:text = "${nutrition.product}"></td>
+        <td class="text-center" th:text = "${nutrition.calories}"></td>
+        <td class="text-center" th:text = "${nutrition.carbs}"></td>
+        <td class="text-center" th:text = "${nutrition.clean}"></td>
+        <td class="text-center" th:text = "${nutrition.foodType}"></td>
+    </tr>
+</table>
+</div>
 
-    <table class = "table-striped table-bordered table-hover ">
-        <tr>
-            <th class="text-center"> Id </th>
-            <th class="text-center"> Product </th>
-            <th class="text-center"> Calories </th>
-            <th class="text-center"> Carbs </th>
-            <th class="text-center"> Clean </th>
-            <th class="text-center"> Food Type </th>
-        </tr>
-        <tr>
-            <td class="text-center" th:text = "${nutrition.id}"></td>
-            <td class="text-center" th:text = "${nutrition.product}"></td>
-            <td class="text-center" th:text = "${nutrition.calories}"></td>
-            <td class="text-center" th:text = "${nutrition.carbs}"></td>
-            <td class="text-center" th:text = "${nutrition.clean}"></td>
-            <td class="text-center" th:text = "${nutrition.foodType}"></td>
-        </tr>
-    </table>
-
-<a href="/nutritions">See Nuts!</a>
-<a href="/nutrition">Add Nut!</a>
-<a th:href="@{/nutrition-editMode(id=${nutrition.id})}"><input type="button" value="Edit"/></a>
+<div>
+    <a href="/nutritions">See Nuts!</a>
+    <a th:href="@{/nutrition-editMode(id=${nutrition.id})}"><input type="button" value="Edit"/></a>
 
 
-<form action="#" th:action="@{/nutrition-delete}" sec:authorize="hasRole('ROLE_ADMIN')">
+    <form action="#" th:action="@{/nutrition-delete}" sec:authorize="hasRole('ROLE_ADMIN')">
 
-    <input type="hidden" th:value="${nutrition.id}" name="nutritionId" />
-    <input type="hidden" value="remove" name="action" />
-    <input type="submit" value="Delete" onclick="return confirm('Are you sure?')"/>
+        <input type="hidden" th:value="${nutrition.id}" name="nutritionId" />
+        <input type="hidden" value="remove" name="action" />
+        <input type="submit" value="Delete" onclick="return confirm('Are you sure?')"/>
 
-</form>
+    </form></div>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 </body>

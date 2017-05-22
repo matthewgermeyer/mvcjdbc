@@ -9,29 +9,24 @@
 <body>
 <h1 class="text-center">Edit this Product!</h1>
 
+<div><form action="#" th:action="@{/product-update}" th:object="${product}" method="post">
+    <input type="hidden" th:value="${product.id}" name="id" />
 
-<div class="container text-center">
+    <p class="text-center">Name: <input type="text" th:field="*{name}" /></p>
+    <p class="text-center" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</p>
 
-    <form action="#" th:action="@{/product-update}" th:object="${product}" method="post">
-        <input type="hidden" th:value="${product.id}" name="id" />
-
-        <p class="text-center">Name: <input type="text" th:field="*{name}" /></p>
-        <p class="text-center" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</p>
-
-        <p class="text-center">Company: <input type="text" th:field="*{company}" /></p>
-        <p class="text-center" th:if="${#fields.hasErrors('company')}" th:errors="*{company}">company Error</p>
+    <p class="text-center">Company: <input type="text" th:field="*{company}" /></p>
+    <p class="text-center" th:if="${#fields.hasErrors('company')}" th:errors="*{company}">company Error</p>
 
 
-        <p class ="text-center ">
-            <input type="reset" value="Reset" />
+    <p class ="text-center ">
+        <input type="reset" value="Reset" />
 
-            <a href="/nutritions" class="btn btn-info text-center  " role="button">Cancel</a>
-        </p>
-        <input type="submit" value="Update" />
-    </form>
-
+        <a href="/nutritions" class="btn btn-info text-center  " role="button">Cancel</a>
+    </p>
+    <input type="submit" value="Update" />
+</form>
 </div>
-
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
